@@ -4,8 +4,7 @@ block content
   h1= title
   p Welcome to #{title}
 
-each val in messages 
-  block content
-    h2=user
-    p=text
-    p=added
+  each val in messages
+    h2=val.user
+    p=val.text
+    p=val.added
