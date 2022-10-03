@@ -3,6 +3,6 @@ extends layout
 block content
     h1="Submit New Message"
     form(action="/new" method="POST")
-        input(type="text")
-        input(type="text")
+        input(type="text" name="messageUser")
+        input(type="text" name="messageText")
         button(type="submit") 
